@@ -44,7 +44,7 @@ def condorcet(candidats, resultats):
     for i in range(len(scores)):
         if scores[i] > scores[maximum]:
             maximum = i
-    print("Le candidat élu est " + candidats[maximum])
+    print("Le candidat élu est " + candidats[maximum] + " avec un score de " + str(scores[maximum]))
 
 
 condorcet(mescandidats, mesresultats)
